@@ -7,7 +7,9 @@
 [![Zero Cloud Dependencies](https://img.shields.io/badge/Cloud%20Dependencies-Zero-4cc38a.svg)](#how-it-works)
 [![Local-First](https://img.shields.io/badge/Local--First-100%25%20localhost-ededed.svg)](#quickstart-under-30-seconds)
 
-> **[demo.gif]** — *Replace with a screen capture of BurnCap intercepting a runaway coding loop, truncating an 11k-char stack trace, and opening the side-by-side diff drawer at `http://localhost:4321`.*
+![BurnCap Live Dashboard Demo](./demo.gif)
+
+*BurnCap intercepting a runaway coding loop, truncating an oversized stack trace, and opening the side-by-side diff & loop forensics drawer at `http://localhost:4321`.*
 
 ---
 
