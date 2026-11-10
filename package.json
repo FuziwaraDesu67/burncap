@@ -1,0 +1,56 @@
+{
+  "name": "burncap",
+  "version": "0.1.0",
+  "description": "Local AI Agent Firewall, Loop Circuit-Breaker, and Smart Token Router with a real-time web dashboard.",
+  "type": "module",
+  "bin": {
+    "burncap": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FuziwaraDesu67/burncap.git"
+  },
+  "homepage": "https://github.com/FuziwaraDesu67/burncap#readme",
+  "bugs": {
+    "url": "https://github.com/FuziwaraDesu67/burncap/issues"
+  },
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc && node -e \"const fs = require('node:fs'); fs.copyFileSync('src/dashboard.html', 'dist/dashboard.html');\"",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build",
+    "test": "tsx --test tests/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "ai",
+    "agent",
+    "firewall",
+    "llm-proxy",
+    "circuit-breaker",
+    "token-optimizer",
+    "openrouter",
+    "anthropic",
+    "openai",
+    "hono"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.14.1",
+    "hono": "^4.7.10"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  }
+}

@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.burncap/
+*.db
+*.sqlite
+*.tgz
+*.log
+.DS_Store
